@@ -12,31 +12,29 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="post"
-    autocomplete="off"
-    onsubmit="onSubmit()">
+      method="post"
+      onsubmit="onSubmit()">
 
       <fieldset class="fieldset_form">
         <legend>Personal information</legend>
-
         <div class="input_form">
           <label for="surname">Surname:</label>
           <input
             type="text"
             name="surname"
             id="surname"
+            autocomplete="off"
           >
         </div>
-
         <div class="input_form">
           <label for="name">Name:</label>
           <input
             type="text"
             name="name"
             id="name"
+            autocomplete="off"
           >
         </div>
-
         <div class="input_form">
           <label for="age">How old are you?</label>
           <input
@@ -48,7 +46,6 @@
             max="100"
           >
         </div>
-
         <div class="input_form">
           <label for="dateOfBirth">Full date of birth:</label>
           <input
@@ -57,7 +54,6 @@
             id="dateOfBirth"
           >
         </div>
-
         <div>
           <label for="term">I accept the term of the afreement</label>
           <input
@@ -66,12 +62,9 @@
             id="term"
             required>
         </div>
-
       </fieldset>
-
       <fieldset class="fieldset_form">
         <legend>Registration</legend>
-
         <div class="input_form">
           <label for="email">E-mail:</label>
           <input
@@ -81,7 +74,6 @@
             placeholder="email@example.com"
             required>
         </div>
-
         <div class="input_form">
           <label for="password">Password:</label>
           <input
@@ -92,12 +84,9 @@
             maxlength="32"
             required>
         </div>
-
       </fieldset>
-
       <fieldset class="fieldset_form">
         <legend>An interesting fact about you!</legend>
-
         <div class="input_form">
           Do you love cats?
           <label for="loveCats">
@@ -119,7 +108,6 @@
               No
           </label>
         </div>
-
         <div class="input_form">
           What is your favorite color?
           <input
@@ -158,14 +146,14 @@
           >
         </div>
       </fieldset>
-
       <fieldset class="fieldset_form">
         <legend>Additional info:</legend>
         <div class="input_form">
           <label for="email">Comments:</label>
           <textarea
             name="comments"
-            id="comments">
+            id="comments"
+            autocomplete="off">
           </textarea>
         </div>
         <div class="input_form">
@@ -177,9 +165,7 @@
             <option value="no">no</option>
           </select>
         </div>
-
       </fieldset>
-
       <button
         type="submit"
         class="submit_button">
